@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20231227182829"
+  },
+  "applications": "*",
+  "clientRootFolder": "ReportApplication",
+  "databaseType": "sql",
+  "entityTableName": "tests",
+  "fields": [
+    {
+      "fieldName": "subject",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "ReportApplication",
+  "name": "Tests",
+  "relationships": [
+    {
+      "otherEntityName": "material",
+      "relationshipName": "materialId",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
