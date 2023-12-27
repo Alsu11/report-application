@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20231227182929"
+  },
+  "applications": "*",
+  "clientRootFolder": "ReportApplication",
+  "databaseType": "sql",
+  "entityTableName": "question",
+  "fields": [
+    {
+      "fieldName": "question",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "answers",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "points",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "ReportApplication",
+  "name": "Question",
+  "relationships": [
+    {
+      "otherEntityName": "tests",
+      "relationshipName": "testId",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
